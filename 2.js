@@ -17,4 +17,6 @@ const info = logger('info')
 
 warning('WARNINGGGGG')
 error('THIS IS ERROR')
-info('IT`s TEXT')
+info('IT`s TEXT')    
+
+warning("ZARABOTALO")
