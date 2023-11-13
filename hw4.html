@@ -1,0 +1,144 @@
+<html>
+<head>
+<style>
+	body {
+		margin:0px;
+		padding:0xpx;
+		}
+	.top {
+		background: linear-gradient(to right, #124790, #216eba);
+		display: flex;
+		padding:20px 0;
+		
+		/*column-gap:30px;*/
+		color:#7696d8;
+		font-weight:bold;
+		
+		justify-content:space-between;
+		
+		border:0px;
+		}
+		.nav_menu {
+			display: flex;
+			column-gap:30px;
+		}
+	
+	#box-pic {
+		margin-right:100px;
+		margin-left:10px;
+	}
+		#box-pic_last {
+			
+		}
+		
+		
+		.gallery {
+			background-color: black;
+			display:grid;
+			grid-template-columns: 400px 400px;
+			/*grid-template-rows: 200px 300px;*/
+			column-gap:10px;
+			row-gap:10px;
+			padding:0 20px;
+			max-width:820px;
+		}
+		.gal-left {
+			display:grid;
+			grid-template-columns: 200px 200px;
+			grid-template-rows: 200px 250px 300px;
+			column-gap:5px;
+			row-gap:5px;
+		}
+		.gal-l-1 {
+			background-color: pink;
+			background-image:url('01.JPG');
+		}
+			
+		.gal-l-2 {
+			background-color: red;
+		}
+			
+		.gal-l-3 {
+			background-color: green;
+			grid-column: 1/3;
+			background-image: url(moskva-dnr.jpg);
+		}
+			
+		.gal-l-4 {
+			background-color: blue;
+			grid-column: 1/3;
+			
+		}
+		
+		.gal-right {
+			display:grid;
+			grid-template-columns: 200px 200px;
+			grid-template-rows: 200px 250px 200px 100px;
+			column-gap:5px;
+			row-gap:5px;
+		}
+		.gal-r-1 {
+			background-color: pink;
+			
+			grid-row: 1/3;
+		}
+			
+		.gal-r-2 {
+			background-color: red;
+		}
+			
+		.gal-r-3 {
+			background-color: green;
+			grid-row: 2/4;
+			
+		}
+			
+		.gal-r-4 {
+			background-color: blue;
+			
+			background-image: url(01.jpg);
+		}
+		.gal-r-5 {
+			background-color: blue;
+			grid-column: 1/3;
+			background-image: url(tour-du-lich-nga-mua-thu-gia-tot_du-lich-viet_400x200.png);
+		}
+		
+		
+</style>
+
+</head>
+<body>
+<h1>Flexbox</h1>
+<div class="top">
+	<div class="nav_menu">
+		<div id='box-pic'><img src='clean.ico' style='width:20px;'></div>
+			<div>Overview</div>
+			<div>Monthly Budget</div>
+			<div>Subscriptions</div>
+			<div>Saving Goals</div>
+		<div>Credits</div>
+	</div>
+	<div id='box-right'><img src='clean.ico' style='width:20px;'>
+	<img src='favicon.ico' style='width:20px;'></div>
+</div>
+
+<h1>Grid</h1>
+<div class="gallery">
+	<div class="gal-left">
+		<div class="gal-l-1"></div>
+		<div class="gal-l-2"></div>
+		<div class="gal-l-3"></div>
+		<div class="gal-l-4"></div>
+	</div>
+	<div class="gal-right">
+		<div class="gal-r-1"></div>
+		<div class="gal-r-2"></div>
+		<div class="gal-r-3"></div>
+		<div class="gal-r-4"></div>
+		<div class="gal-r-5"></div>
+	</div>
+</div>
+
+</body>
+</html>
